@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Prompt"
+  short_description: "Prepare a ready /review handoff for current changes"
+  default_prompt: "Use $review-prompt for the changes from this session."
