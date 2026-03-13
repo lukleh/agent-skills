@@ -1,17 +1,18 @@
 # agent-skills
 
-Shared agent skills for local tooling.
+Reusable agent skills for coding assistants.
 
-## Layout
+This repository is intended to hold skills for multiple agent runtimes, including Codex and Claude Code. It currently contains the `review-prompt` skill for Codex.
 
-- `codex/`: Codex skill directories copied in their native format
-- `claude-code/`: planned namespace for future Claude Code skills
+## Repository Layout
+
+- `codex/`: skills in Codex-compatible format
+- `claude-code/`: reserved for future Claude Code skills
 
 ## Current Skills
 
-- `codex/review-prompt`: Codex review handoff skill, including its template, helper script, and agent metadata
+- `codex/review-prompt`: prepares a focused `/review` handoff for code changes, including the skill definition, review prompt template, helper script for inferring review scope, and agent metadata
 
-## Notes
+## Status
 
-- The Codex skill is stored as source content from the local skill installation.
-- If we later want this repo to double as an install source, we can add lightweight sync or install scripts.
+This repository is intentionally small to start. More shared skills and Claude Code variants can be added over time.
